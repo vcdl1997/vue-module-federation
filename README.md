@@ -1,6 +1,6 @@
 # 📦 Instalação de Requisitos para o Projeto
 
-Este projeto utiliza microFrontends com Vue.js 3, Webpack Module Federation e outras ferramentas modernas. Abaixo estão listadas as dependências e instruções para instalação do ambiente necessário.
+Este projeto utiliza microfrontends com Vue.js 3, Webpack Module Federation e outras ferramentas modernas. Abaixo estão listadas as dependências e instruções para instalação do ambiente necessário.
 
 ---
 
@@ -60,9 +60,9 @@ Após o clonar o repositório, você verá que o mesmo é composto por três pro
 cd orquestrador && npm i && cd ../sistema-a && npm i && cd ../sistema-b && npm i
 ```
 
-### 5. Buildar os microFrontends e inicializar Servidores (http-server)
+### 5. Buildar os microfrontends e inicializar Servidores (http-server)
 
-Antes de executar o orquestrador, faça o build dos microFrontends e rode o http-server. <ins> Aconselho rodar esses comandos em terminais separados. </ins>
+Antes de executar o orquestrador, faça o build dos microfrontends e rode o http-server. <ins> Aconselho rodar esses comandos em terminais separados. </ins>
 
 #### Sistema A
 ```bash
@@ -76,7 +76,7 @@ cd sistema-b && npm run build && http-server dist -p 8082 --cors
 
 ### 6. Inicializar o Orquestrador
 
-Após ter concluido o build e levantado o servidor de cada um dos microFrontends, levante o servidor do orquestrador.
+Após ter concluido o build e levantado o servidor de cada um dos microfrontends, levante o servidor do orquestrador.
 
 ```bash
 cd orquestrador && npm run serve
