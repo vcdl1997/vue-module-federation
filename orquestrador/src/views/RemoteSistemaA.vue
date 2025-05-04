@@ -21,7 +21,12 @@
 
 		this.remoteApp = createApp(app).use(router)
 
-		module.default.router.push('/');
+		if(location.href.indexOf("#") > -1){
+			const currentRoute = location.href.split('#')[1];
+			module.default.router.push(currentRoute);
+		}else{
+			module.default.router.push('/');
+		}
 
 		this.remoteApp.mount(`#${this.containerId}`)
 	},
