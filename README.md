@@ -38,7 +38,7 @@ npm install -g @vue/cli@5.0.8
 
 Verifique a instalação:
 ```bash
-vue --version  # Deve retornar 5.0.8 ou uma versão superior
+vue --version  # Deve retornar 5.0.8
 ```
 
 ### 3. Instalar http-server (Global)
