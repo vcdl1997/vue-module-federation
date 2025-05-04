@@ -66,12 +66,12 @@ Antes de executar o orquestrador, faça o build dos microFrontends e rode o http
 
 #### Sistema A
 ```bash
-cd ../sistema-a && npm run build && http-server dist -p 8081 --cors
+cd sistema-a && npm run build && http-server dist -p 8081 --cors
 ```
 
 #### Sistema B
 ```bash
-cd ../sistema-b && npm run build && http-server dist -p 8082 --cors
+cd sistema-b && npm run build && http-server dist -p 8082 --cors
 ```
 
 ### 6. Inicializar o Orquestrador
@@ -79,5 +79,5 @@ cd ../sistema-b && npm run build && http-server dist -p 8082 --cors
 Após ter concluido o build e levantado o servidor de cada um dos microFrontends, levante o servidor do orquestrador.
 
 ```bash
-cd ../orquestrador && npm run serve
+cd orquestrador && npm run serve
 ```
